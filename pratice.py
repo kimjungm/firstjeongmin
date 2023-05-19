@@ -1,5 +1,5 @@
 from random import *
-numbers = range(1, 21)
+numbers = range(2, 21)
 numbers = list(numbers)
 shuffle(numbers)
 
