@@ -1,11 +1,19 @@
-url = "http://daum.com"
-mystr =url.replace("http://","")
+from random import *
+numbers = range(1, 21)
+numbers = list(numbers)
+shuffle(numbers)
 
-print(mystr)
+winner = sample(numbers,4)
+print("---당첨자 발표---")
+print("치킨당첨자: ", format(winner[0]))
+print("커피당첨자: ",format(winner[1:]))
+print("---축하합니다---")
 
-mystr =mystr[:mystr.index(".")]
-print(mystr)
-추가됬는지 보자
-password = mystr[:3]+ str(len(mystr)) + str(mystr.count("e"))+ "!"
 
-print("{0}의 비밀번호는 {1} 입니다".format(url , password))
+
+
+
+
+
+
+
